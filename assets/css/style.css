@@ -14,6 +14,8 @@ html {
 #header {
   background-color: #000;
   height: 46px;
+  width: 100%;
+  position: fixed;
 }
 
 #header .search-button {
@@ -22,16 +24,14 @@ html {
   cursor: pointer;
 }
 
-#header .search-button:hover{
-    background-color: #f44336;
+#header .search-button:hover {
+  background-color: #f44336;
 }
 
 #header .search-icon {
   color: #fff;
   line-height: 46px;
 }
-
-
 
 #nav {
   color: #fff;
@@ -55,13 +55,19 @@ html {
   background-color: #ccc;
 }
 
+#nav li:hover .subnav {
+  display: block;
+}
+
 #nav li:hover a {
   color: #000;
 }
 
 #nav .subnav {
+  display: none;
   position: absolute;
   background-color: #fff;
+  min-width: 160px;
 }
 
 #nav .subnav li {
@@ -75,5 +81,6 @@ html {
   background-color: #333;
 }
 
-#container {
+#content {
+  height: 1000px;
 }
