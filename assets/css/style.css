@@ -14,8 +14,13 @@ html {
 #header {
   background-color: #000;
   height: 46px;
+<<<<<<< HEAD
   position: fixed;
   width: 100%;
+=======
+  width: 100%;
+  position: fixed;
+>>>>>>> 394c42d139636cbb87f840026b51d8859b944469
 }
 
 #header .search-button {
@@ -24,16 +29,14 @@ html {
   cursor: pointer;
 }
 
-#header .search-button:hover{
-    background-color: #f44336;
+#header .search-button:hover {
+  background-color: #f44336;
 }
 
 #header .search-icon {
   color: #fff;
   line-height: 46px;
 }
-
-
 
 #nav {
   color: #fff;
@@ -57,6 +60,10 @@ html {
   background-color: #ccc;
 }
 
+#nav li:hover .subnav {
+  display: block;
+}
+
 #nav li:hover a {
   color: #000;
 }
@@ -69,6 +76,7 @@ html {
   display: none;
   position: absolute;
   background-color: #fff;
+  min-width: 160px;
 }
 
 #nav .subnav li {
@@ -82,6 +90,10 @@ html {
   background-color: #333;
 }
 
+<<<<<<< HEAD
 #container {
+=======
+#content {
+>>>>>>> 394c42d139636cbb87f840026b51d8859b944469
   height: 1000px;
 }
