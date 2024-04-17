@@ -9,18 +9,15 @@ html {
 }
 
 #main {
+ 
 }
 
 #header {
   background-color: #000;
   height: 46px;
-<<<<<<< HEAD
-  position: fixed;
-  width: 100%;
-=======
   width: 100%;
   position: fixed;
->>>>>>> 394c42d139636cbb87f840026b51d8859b944469
+
 }
 
 #header .search-button {
@@ -86,14 +83,12 @@ html {
 }
 
 #slider {
-  height: 400px;
-  background-color: #333;
+  display: inline-block;
+  margin-top: 46px;
+  padding-top: 50%;
+  background-image: url('/assets/slider1/ny.jpg') top center;
 }
 
-<<<<<<< HEAD
-#container {
-=======
 #content {
->>>>>>> 394c42d139636cbb87f840026b51d8859b944469
   height: 1000px;
 }
