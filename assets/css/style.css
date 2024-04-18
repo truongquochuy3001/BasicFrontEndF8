@@ -8,6 +8,14 @@ html {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+.text-white {
+  color: #fff;
+}
+
+.clear {
+  clear: both;
+}
+
 #main {
 }
 
@@ -85,7 +93,9 @@ html {
   position: relative;
   margin-top: 46px;
   padding-top: 50%;
+
   background-image: url("/assets/img/la.jpg");
+  z-index: -1;
 }
 
 #slider .text-content {
@@ -97,7 +107,7 @@ html {
   transform: translateX(-50%);
   text-align: center;
 }
-
+/* about section */
 #content {
 }
 
@@ -105,6 +115,8 @@ html {
   width: 800px;
   padding-top: 64px;
   padding-bottom: 64px;
+  padding-left: 16px;
+  padding-right: 16px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -133,4 +145,65 @@ html {
   font-size: 15px;
   margin-top: 25px;
   text-align: justify;
+}
+
+#content .member-list {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+#content .member-item {
+  float: left;
+  width: 33.33333%;
+  text-align: center;
+}
+
+#content .member-name {
+  font-size: 15px;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+}
+
+#content .member-img {
+  width: 154px;
+  height: 154px;
+  border-radius: 5px;
+}
+
+/* tour section */
+#content .tour-section {
+  background-color: #000;
+}
+
+.tickets-list {
+  background-color: #fff;
+  margin-top: 40px;
+}
+
+.tickets-list li {
+  color: #757575;
+  font-size: 15px;
+  padding: 8px 16px;
+  border-bottom: 1px solid #ccc;
+  list-style: none;
+}
+
+.sold-out{
+  background-color: #f44336;
+  color: #fff;
+  padding: 4px 4px;
+  margin-left: 16px;
+}
+
+.quantity{
+  float: right;
+  color: #fff;
+  background-color: #000;
+  border-radius: 50%;
+  text-align: center;
+  width: 24px;
+  height: 24px;
+  line-height: 24px;
+}
+.section-sub-heading {
 }
