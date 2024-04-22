@@ -4,6 +4,7 @@
   box-sizing: border-box;
 }
 
+/* Common */
 html {
   font-family: Arial, Helvetica, sans-serif;
 }
@@ -16,6 +17,22 @@ html {
   clear: both;
 }
 
+.row {
+  margin-left: -8px;
+  margin-right: -8px;
+}
+
+.col {
+  float: left;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.text-center{
+  text-align: center !important;
+}
+
+/* Main */
 #main {
 }
 
@@ -46,6 +63,10 @@ html {
 #nav {
   color: #fff;
   display: inline-block;
+}
+
+.col-third {
+  width: 33.33333%;
 }
 
 #nav li a {
@@ -152,12 +173,6 @@ html {
   padding-bottom: 32px;
 }
 
-#content .member-item {
-  float: left;
-  width: 33.33333%;
-  text-align: center;
-}
-
 #content .member-name {
   font-size: 15px;
   margin-block-start: 1em;
@@ -212,13 +227,8 @@ html {
 
 /* Places */
 .place-list {
-  margin: 32px -8px 0;
-}
-
-.place-item {
-  float: left;
-  width: 33.33333%;
-  padding: 0 8px;
+  margin-top: 32px;
+  margin-bottom: 48px;
 }
 
 .place-img {
@@ -254,6 +264,7 @@ html {
   vertical-align: middle;
   text-decoration: none;
   color: #fff;
+  border: none;
 }
 
 .buy-btn:hover {
@@ -274,7 +285,7 @@ html {
   justify-content: center;
 }
 
-.modal.open{
+.modal.open {
   display: flex;
 }
 
@@ -283,7 +294,7 @@ html {
   width: 900px;
   min-height: 200px;
   position: relative;
-  animation: modalFadeIn ease .5s;
+  animation: modalFadeIn ease 0.5s;
 }
 
 .modal-header {
@@ -315,7 +326,7 @@ html {
   cursor: pointer;
 }
 
-.modal-body{
+.modal-body {
   padding: 16px;
 }
 
@@ -324,7 +335,7 @@ html {
   padding: 15px;
 }
 
-.modal-input{
+.modal-input {
   border: 1px solid #ccc;
   padding: 8px;
   display: block;
@@ -333,38 +344,38 @@ html {
   font-size: 15px;
 }
 
-.buy-tickets{
+.buy-tickets {
   width: 100%;
   height: 54px;
   color: #fff;
   background-color: #009688;
-  padding: 16px ;
+  padding: 16px;
   margin: 16px 0;
   border: none;
   font-size: 15px;
 }
 
-.buy-tickets:hover{
+.buy-tickets:hover {
   color: #000;
   background-color: #ccc;
 }
 
-.modal-footer{
+.modal-footer {
   float: right;
   display: block;
   padding: 16px;
 }
 
-.modal-help a{
-  color: #2196F3;
+.modal-help a {
+  color: #2196f3;
 }
 
 @keyframes modalFadeIn {
-  from{
+  from {
     opacity: 0;
     transform: translateY(-140px);
   }
-  to{
+  to {
     opacity: 1;
     transform: translateY(0);
   }

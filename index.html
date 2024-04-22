@@ -68,8 +68,8 @@
             veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
             ea commodo consequat.
           </p>
-          <div class="member-list">
-            <div class="member-item">
+          <div class="row member-list">
+            <div class="col col-third text-center">
               <p class="member-name">Name</p>
               <img
                 src="/assets/img/bandmember.jpg"
@@ -77,7 +77,7 @@
                 class="member-img"
               />
             </div>
-            <div class="member-item">
+            <div class="col col-third text-center">
               <p class="member-name">Name</p>
               <img
                 src="/assets/img/bandmember.jpg"
@@ -85,7 +85,7 @@
                 class="member-img"
               />
             </div>
-            <div class="member-item">
+            <div class="col col-third text-center">
               <p class="member-name">Name</p>
               <img
                 src="/assets/img/bandmember.jpg"
@@ -110,8 +110,8 @@
               <li>November <span class="quantity">3</span></li>
             </ul>
             <!-- place-list -->
-            <div class="place-list">
-              <div class="place-item">
+            <div class="row place-list">
+              <div class="col col-third">
                 <img
                   src="assets/img/newyork.jpg"
                   alt="NewYork"
@@ -123,10 +123,10 @@
                   <p class="place-desc">
                     Praesent tincidunt sed tellus ut rutrum sed vitae justo
                   </p>
-                  <button class="buy-btn js-buy-ticket  ">Buy ticket</button>
+                  <button class="buy-btn js-buy-ticket">Buy ticket</button>
                 </div>
               </div>
-              <div class="place-item">
+              <div class="col col-third">
                 <img src="assets/img/paris.jpg" alt="Paris" class="place-img" />
                 <div class="place-body">
                   <h3 class="place-heading">Paris</h3>
@@ -137,7 +137,7 @@
                   <button class="buy-btn js-buy-ticket">Buy ticket</button>
                 </div>
               </div>
-              <div class="place-item">
+              <div class="col col-third">
                 <img
                   src="assets/img/sanfran.jpg"
                   alt="San Francisco"
@@ -149,7 +149,7 @@
                   <p class="place-desc">
                     Praesent tincidunt sed tellus ut rutrum sed vitae justo
                   </p>
-                  <button class="buy-btn js-buy-ticket  ">Buy ticket</button>
+                  <button class="buy-btn js-buy-ticket">Buy ticket</button>
                 </div>
               </div>
               <div class="clear"></div>
@@ -203,31 +203,31 @@
   </body>
 
   <script>
-    const buyBtns =document.querySelectorAll('.js-buy-ticket')
-    const modal = document.querySelector('.modal')
-    const modalClose = document.querySelector('.js-modal-close')
-    const modalContainer = document.querySelector('.js-modal-container')
+    const buyBtns = document.querySelectorAll(".js-buy-ticket");
+    const modal = document.querySelector(".modal");
+    const modalClose = document.querySelector(".js-modal-close");
+    const modalContainer = document.querySelector(".js-modal-container");
     // Hàm hiển thị modal mua vé
-    function showBuyTickets(){
-      modal.classList.add('open');
-    };
+    function showBuyTickets() {
+      modal.classList.add("open");
+    }
 
     // Hàm ẩn modal mua vé
-    function hideBuyTickets(){
-      modal.classList.remove('open');
+    function hideBuyTickets() {
+      modal.classList.remove("open");
     }
 
     // Lặp qua từng thẻ button và lắng nghe hành vi click
-    for (const buyBtn of buyBtns){
-      buyBtn.addEventListener('click', showBuyTickets)
+    for (const buyBtn of buyBtns) {
+      buyBtn.addEventListener("click", showBuyTickets);
     }
-    // Nghe hành vi click vào button close  
-    modalClose.addEventListener('click', hideBuyTickets)
+    // Nghe hành vi click vào button close
+    modalClose.addEventListener("click", hideBuyTickets);
 
-    modal.addEventListener('click', hideBuyTickets)
+    modal.addEventListener("click", hideBuyTickets);
 
-    modalContainer.addEventListener('click', function(event){
-      event.stopPropagation()
-    })
+    modalContainer.addEventListener("click", function (event) {
+      event.stopPropagation();
+    });
   </script>
 </html>
