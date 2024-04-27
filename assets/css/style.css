@@ -28,13 +28,24 @@ html {
   padding-right: 8px;
 }
 
-.text-center{
+.col-half {
+  width: 50%;
+}
+
+.col-third {
+  width: 33.33333%;
+}
+
+.col-full{
+  width: 100%;
+}
+
+.text-center {
   text-align: center !important;
 }
 
 /* Main */
-#main {
-}
+#main {}
 
 #header {
   background-color: #000;
@@ -65,9 +76,7 @@ html {
   display: inline-block;
 }
 
-.col-third {
-  width: 33.33333%;
-}
+
 
 #nav li a {
   color: white;
@@ -128,9 +137,9 @@ html {
   transform: translateX(-50%);
   text-align: center;
 }
+
 /* about section */
-#content {
-}
+#content {}
 
 #content .content-section {
   width: 800px;
@@ -375,6 +384,7 @@ html {
     opacity: 0;
     transform: translateY(-140px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
