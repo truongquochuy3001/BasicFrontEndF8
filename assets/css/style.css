@@ -48,6 +48,23 @@ html {
   text-align: center !important;
 }
 
+.btn {
+  background-color: #000;
+  padding: 8px 16px;
+  display: inline-block;
+  text-align: center;
+  cursor: pointer;
+  vertical-align: middle;
+  text-decoration: none;
+  color: #fff;
+  border: none;
+}
+
+.btn:hover {
+  background-color: #ccc;
+  color: #000;
+}
+
 /* Main */
 #main {
 }
@@ -147,10 +164,7 @@ html {
 
 #content .content-section {
   width: 800px;
-  padding-top: 64px;
-  padding-bottom: 64px;
-  padding-left: 16px;
-  padding-right: 16px;
+  padding: 64px 0 112px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -266,23 +280,6 @@ html {
 .place-desc {
   margin: 15px 0;
   line-height: 1.4;
-}
-
-.buy-btn {
-  background-color: #000;
-  padding: 8px 16px;
-  display: inline-block;
-  text-align: center;
-  cursor: pointer;
-  vertical-align: middle;
-  text-decoration: none;
-  color: #fff;
-  border: none;
-}
-
-.buy-btn:hover {
-  background-color: #ccc;
-  color: #000;
 }
 
 /* Modal */
@@ -428,6 +425,42 @@ html {
   background-color: #ccc;
   color: #000;
 }
+
+/* map-section */
+
+.map-section img {
+  width: 100%;
+}
+
+/* footer */
+
+#footer {
+  text-align: center;
+  padding: 64px 16px;
+}
+
+#footer .social-list {
+  font-size: 24px;
+}
+
+#footer .social-list a {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+#footer .social-list a:hover {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+#footer .copyright{
+  margin: 15px 0;
+  color: rgba(0, 0, 0, 0.6); 
+}
+
+#footer .copyright a{
+  text-decoration: underline;
+}
+
 
 @keyframes modalFadeIn {
   from {
