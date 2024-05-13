@@ -276,11 +276,12 @@
     var headerHeight = header.clientHeight;
 
     mobileMenu.onclick = function () {
-      var isClose = header.clientHeight === headerHeight;
-      if (isClose) {
+      var isClosed = header.clientHeight === headerHeight;
+      console.log(isClosed);
+      console.log(headerHeight);
+      if (header.clientHeight === headerHeight) {
         header.style.height = "auto";
-      }
-      {
+      } else {
         header.style.height = null;
       }
     };
