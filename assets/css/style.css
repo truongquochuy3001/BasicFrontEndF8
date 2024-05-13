@@ -76,9 +76,11 @@ html {
   top: 0px;
   position: fixed;
   z-index: 1;
+  overflow: hidden;
 }
 
-#header .search-button {
+#header .search-button,
+#header .menu-button {
   float: right;
   padding: 0 21px;
   cursor: pointer;
@@ -88,7 +90,14 @@ html {
   background-color: #f44336;
 }
 
-#header .search-icon {
+#header .menu-button:hover,
+#header .menu-icon:hover {
+  background-color: #cccccc;
+  color: #000;
+}
+
+#header .search-icon,
+#header .menu-icon {
   color: #fff;
   line-height: 46px;
 }
@@ -455,15 +464,14 @@ html {
   color: rgba(0, 0, 0, 0.3);
 }
 
-#footer .copyright{
+#footer .copyright {
   margin: 15px 0;
-  color: rgba(0, 0, 0, 0.6); 
+  color: rgba(0, 0, 0, 0.6);
 }
 
-#footer .copyright a{
+#footer .copyright a {
   text-decoration: underline;
 }
-
 
 @keyframes modalFadeIn {
   from {
