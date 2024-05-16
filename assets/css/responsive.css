@@ -3,6 +3,10 @@
         display: block;
     }
 
+    #mobile-menu{
+        display: block;
+    }
+
     #header .search-button {
         display: none;
     }

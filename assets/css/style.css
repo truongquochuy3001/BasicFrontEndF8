@@ -79,6 +79,8 @@ html {
   overflow: hidden;
 }
 
+#mobile-menu{display: none}
+
 #header .search-button,
 #header .menu-button {
   float: right;
@@ -168,8 +170,7 @@ html {
 }
 
 /* about section */
-#content {
-}
+
 
 #content .content-section {
   width: 800px;
