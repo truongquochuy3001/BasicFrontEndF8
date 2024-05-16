@@ -273,13 +273,14 @@
     const modalContainer = document.querySelector(".js-modal-container");
     var header = document.getElementById("header");
     var mobileMenu = document.getElementById("mobile-menu");
+    // Lấy chiều cao hiện tại của header
     var headerHeight = header.clientHeight;
 
+    // Đóng mở Menu khi click vào icon
     mobileMenu.onclick = function () {
       var isClosed = header.clientHeight === headerHeight;
-      console.log(isClosed);
-      console.log(headerHeight);
-      if (header.clientHeight === headerHeight) {
+
+      if (isClosed) {
         header.style.height = "auto";
       } else {
         header.style.height = null;
