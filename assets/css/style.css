@@ -79,7 +79,9 @@ html {
   overflow: hidden;
 }
 
-#mobile-menu{display: none}
+#mobile-menu {
+  display: none;
+}
 
 #header .search-button,
 #header .menu-button {
@@ -109,6 +111,11 @@ html {
   display: inline-block;
 }
 
+#nav li {
+  display: inline-block;
+  position: relative;
+}
+
 #nav li a {
   color: white;
   text-decoration: none;
@@ -117,32 +124,23 @@ html {
   text-transform: uppercase;
 }
 
-#nav li {
-  display: inline-block;
-  position: relative;
-}
-
 #nav li:hover {
   background-color: #ccc;
-}
-
-#nav li:hover .subnav {
-  display: block;
 }
 
 #nav li:hover a {
   color: #000;
 }
 
-#nav li:hover .subnav {
-  display: block;
-}
-
 #nav .subnav {
   display: none;
-  position: absolute;
+  position: fixed;
   background-color: #fff;
   min-width: 160px;
+}
+
+#nav li:hover .subnav {
+  display: block;
 }
 
 #nav .subnav li {
@@ -155,8 +153,8 @@ html {
   position: relative;
   margin-top: 46px;
   padding-top: 50%;
-
   background-image: url("/assets/img/la.jpg");
+  background-position: center;
 }
 
 #slider .text-content {
@@ -170,7 +168,6 @@ html {
 }
 
 /* about section */
-
 
 #content .content-section {
   width: 800px;
