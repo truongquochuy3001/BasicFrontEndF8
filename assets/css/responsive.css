@@ -1,8 +1,18 @@
 @media (max-width : 740px) {
-    #nav > li{
+    
+    #nav {
         display: block;
     }
 
+    #nav > li{
+        display: block;
+    }
+    
+    #nav > li:first-child{
+        display: inline-block;
+       
+        
+    }
     #mobile-menu{
         display: block;
     }
