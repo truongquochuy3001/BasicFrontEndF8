@@ -18,6 +18,10 @@
     display: block;
   }
 
+  .col-third{
+    width: 100%;
+  }
+
   #header .search-button {
     display: none;
   }
